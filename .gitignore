@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# Core plugin files
+!main.js
+!manifest.json
+!styles.css
+
+# Docs 
+!README.md
+!CLAUDE.md
+
+# This file
+!.gitignore

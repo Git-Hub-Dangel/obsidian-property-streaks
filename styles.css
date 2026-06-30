@@ -1,0 +1,158 @@
+/* Property Streak Plugin Styles */
+
+.metadata-property {
+  display: flex;
+  align-items: center;
+}
+
+.streak-widget {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  font-size: 0.85em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.streak-flame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.streak-flame svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Lit flame: accent color (set via inline style) */
+.streak-flame.streak-flame--lit svg {
+  fill: var(--streak-accent, var(--interactive-accent));
+  stroke: none;
+}
+
+/* Grey flame: alive but not yet complete today */
+.streak-flame.streak-flame--grey svg {
+  fill: var(--text-faint);
+  stroke: none;
+}
+
+/* Icy outline: freeze was spent yesterday, today incomplete */
+.streak-flame.streak-flame--frozen svg {
+  fill: none;
+  stroke: var(--streak-freeze-color, #6ab0d4);
+  stroke-width: 1.5;
+}
+
+.theme-light .streak-flame.streak-flame--frozen svg {
+  stroke: #2c5f8a;
+}
+
+/* Abandoned: outline only, grey */
+.streak-flame.streak-flame--abandoned svg {
+  fill: none;
+  stroke: var(--text-faint);
+  stroke-width: 1.5;
+}
+
+.streak-count {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.streak-message {
+  color: var(--text-faint);
+  font-style: italic;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Streak Widget View ─────────────────────────────────────────────────────── */
+
+.streak-widget-view {
+  padding: 12px;
+}
+
+.streak-widget-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.streak-widget-name {
+  flex: 1;
+  font-size: 0.9em;
+}
+
+.streak-widget-row .streak-flame {
+  width: 20px;
+  height: 20px;
+}
+
+.streak-widget-row .streak-flame svg {
+  width: 20px;
+  height: 20px;
+}
+
+.streak-widget-count {
+  font-weight: 600;
+  min-width: 2ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.streak-widget-empty {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────────────────────── */
+
+/* Widget sits left of the property key via flex order */
+.is-mobile .streak-widget {
+  order: -1;
+  margin-left: 0;
+  margin-right: 6px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Message hidden on mobile — icon + number only */
+.is-mobile .streak-message {
+  display: none !important;
+}
+
+/* 44px minimum touch target around the flame icon */
+.is-mobile .streak-flame {
+  min-width: 44px;
+  min-height: 44px;
+  width: 24px;
+  height: 24px;
+}
+
+.is-mobile .streak-flame svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Sidebar rows: taller touch targets */
+.is-mobile .streak-widget-row {
+  padding: 10px 4px;
+  min-height: 44px;
+}
+
+.is-mobile .streak-widget-row .streak-flame {
+  width: 24px;
+  height: 24px;
+}
+
+.is-mobile .streak-widget-row .streak-flame svg {
+  width: 24px;
+  height: 24px;
+}
