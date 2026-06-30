@@ -8,6 +8,8 @@
 
 # Docs 
 !README.md
+!/images
+!/images/**
 !CLAUDE.md
 
 # This file

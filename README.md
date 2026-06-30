@@ -23,31 +23,31 @@ Tip: Start with one or two simple streaks and build them out from there. Better 
 ### Streaks
 Created in the plugin's settings, a streak offers you the following customisation options
 - Name (the display name of the streak)
-- Type ('mono' or 'multi' decides whether the streak depends on one or multiple frontmatter properties) see [[#Mono Streaks]] and [[#Multi Streaks]] for detail
+- Type ('mono' or 'multi' decides whether the streak depends on one or multiple frontmatter properties) see [Mono Streaks](#mono-streaks) and [Multi Streaks](#multi-streaks) for detail
 - Show in Properties (toggle to show this streak and icon next to the frontmatter)
-- Show in Widget (toggle to include this streak in the widget) see [[#Widget]] for detail
-- Streak Freeze Regeneration Duration (How many consecutive days it takes to earn a streak freeze) set 0 to turn off Streak Freezes, see [[#Streak Freezes]] for detail
+- Show in Widget (toggle to include this streak in the widget) see [Widget](#widget) for detail
+- Streak Freeze Regeneration Duration (How many consecutive days it takes to earn a streak freeze) set 0 to turn off Streak Freezes, see [Streak Freezes](#streak-freezes) for detail
 - Property Key (name of the property to track)
-- Property Type (supported frontmatter property type) see [[#Frontmatter Property Types]] for detail
+- Property Type (supported frontmatter property type) see [Frontmatter Property Types](#frontmatter-property-types) for detail
 #### Mono Streaks
 Monostreaks track exclusively one frontmatter property. This allows certain frontmatter types to receive exclusive remark messages:
 - For Properties of type `number` or `list` messages praising this week's largest effort appear when the amount is larger than every other entry this week
-![[property-streaks-largest-effort.png]]
+![property-streaks-largest-effort.png](/images/property-streaks-largest-effort.png)
 #### Multi Streaks
 Multistreaks allow for multiple properties to be contributing to one synced streak. Evaluation can follow by either two options:
 - AND - Every property of the multistreak must be checked to extend the streak
 - OR - One or more properties extend the streak
 
 Multistreaks are displayed next to every member-property separately and show an identical message.
-![[property-streaks-largest-effort.png]]
+![property-streaks-largest-effort.png](/images/property-streaks-largest-effort.png)
 *daily/chinese and daily/read both constitue the pink multistreak 'Learning Chinese' and share the same streak information. The green streak below 'Health' has is similar.*
 ##### Partial Flames
 Flames of multistreaks have the additional property of indicating the percentage of completed properties by a partially lit flame that will fill up as more properties are completed.
-![[property-streaks-multi-streaks-partial-flame.png]]
+![property-streaks-multi-streaks-partial-flame.png](/images/property-streaks-multi-streaks-partial-flame.png)
 
 ### Display
 Property streaks are displayed to the right of their respective properties. Can be disabled in streak settings.
-![[property-streaks-full-daily-view.png]]
+![property-streaks-full-daily-view.png](/images/property-streaks-full-daily-view.png)
 #### Flame Icon States
 - Lit (The all checked properties of the streak have extended it for today)
 - [Multistreaks only] Partially Lit (A fraction of properties has already been checked, but not all)
@@ -59,32 +59,32 @@ Your streak is lost if you fail to extend it once. Streak freezes protect your s
 - Set 'Streak Freeze Regeneration Duration' t0 0 to turn off this feature
 
 Below you can see a streak freeze detonating. The streak flame turns blue.
-![[property-streaks-streak-freeze-demo-1.png]]
+![property-streaks-streak-freeze-demo-1.png](/images/property-streaks-streak-freeze-demo-1.png)
 On the following day no freeze is available anymore to save another abandonment. The streak is lost and must be started again.
-![[property-streaks-streak-freeze-demo-2.png]]
+![property-streaks-streak-freeze-demo-2.png](/images/property-streaks-streak-freeze-demo-2.png)
 If you manage to extend though, the streak continues. Now, without a streak freeze until another one is earned.
-![[property-streaks-streak-freeze-demo-3.png]]
+![property-streaks-streak-freeze-demo-3.png](/images/property-streaks-streak-freeze-demo-3.png)
 If you froze yesterday, the streak will notify you accordingly
-![[property-streaks-streak-freeze-demo-4.png]]
+![property-streaks-streak-freeze-demo-4.png](/images/property-streaks-streak-freeze-demo-4.png)
 or when extended
-![[property-streaks-streak-freeze-demo-5.png]]
+![property-streaks-streak-freeze-demo-5.png](/images/property-streaks-streak-freeze-demo-5.png)
 ### Widget
 Using the `Property Streaks: Open streak widget` dispatches an Obsidian widget you can pin in your vault. (I recommend using the 'Workspaces' core-plugin to save a desired layout as standard with the widget in place) It shows your current streak.
 - You can decide individually, whether a streak is shown within the widget by using the 'Show in Widget' setting.
 
-![[property-streaks-widget.png]]
+![property-streaks-widget.png](/images/property-streaks-widget.png)
 ### Frontmatter Property Types
 Supported frontmatter types are
 
 - Checkbox
-- Number (Special remark message for [[#Mono Streaks]] can appear)
-- Lists (Special remark message for [[#Mono Streaks]] can appear)
+- Number (Special remark message for [Mono Streaks](#mono-streaks) can appear)
+- Lists (Special remark message for [Mono Streaks](#mono-streaks) can appear)
 - Text
 ## Mobile Snapshots
 The plugin supports mobile layout seamlessly. Remarks are not shown on phone.
-![[property-streak-mobile-daily-note.jpg]]
+![property-streak-mobile-daily-note.jpg](/images/property-streak-mobile-daily-note.jpg)
 The widget is also accessible on mobile.
-![[property-streaks-mobile-widget.jpg]]
+![property-streaks-mobile-widget.jpg](/images/property-streaks-mobile-widget.jpg)
 
 ## Examples
 ### Daily Note Frontmatter Example
