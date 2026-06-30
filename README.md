@@ -1,7 +1,7 @@
+![Obsidian Property Streaks Plugin](/images/banner.png)
+
 # A Guide to the Property Streaks Plugin 
 Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze. 
-
-![Obsidian Property Streaks Plugin](/images/banner.png)
 
 NOTE: This plugin expects you to already use, or adapt to a daily-note template with persistent YAML-frontmatter fields that you review every day. See Examples section below
 ## (No) Quick Start
