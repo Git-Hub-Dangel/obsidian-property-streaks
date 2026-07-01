@@ -1,5 +1,7 @@
 ![Obsidian Property Streaks Plugin](/images/banner.png)
 
+<img src="images/property-streaks-ref-daily.png" width="32%"> <img src="images/property-streaks-ref-widget.png" width="65%">
+
 # A Guide to the Property Streaks Plugin 
 Enhance your daily-note frontmatter based habit- and goal tracking with Duolingo-like streaks that feature custom colours, motivational comments, various streak types, and the occasional streak-freeze. 
 
