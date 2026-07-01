@@ -1,7 +1,7 @@
 {
   "id": "property-streak",
   "name": "Property Streak",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "minAppVersion": "1.4.0",
   "description": "Create and persist Duolingo inspired habit streaks from daily-note frontmatter with widgets, colours, and customisable streak types.",
   "author": "Daniel Khansa",
